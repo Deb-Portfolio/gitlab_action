@@ -17,7 +17,7 @@ jobs:
       - name: View SW Version
         run: sw_vers
   dependant-job:
-    runs-on: windows-latest
+    runs-on: self-hosted
     needs: run-shell-commands
     steps:
       - name: echo a string
