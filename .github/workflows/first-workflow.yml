@@ -17,8 +17,8 @@ jobs:
       - name: View SW Version
         run: sw_vers
   dependant-job:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
     needs: run-shell-commands
     steps:
       - name: echo a string
-        run: Write-Output "Windows String"
+        run: echo "Fixed errot"
