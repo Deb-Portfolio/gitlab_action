@@ -9,13 +9,13 @@ on:
         required: false
 jobs:
   calling-a-reusable-wf:
-    uses: Deb-Portfolio/reusable_workflow/.github/workflows/reusable-workflow.yaml@main
+    uses: Deb-Portfolio/reusable_workflow/.github/workflows/reusable.yaml@main
     with:
       name: ${{ inputs.name }}
     secrets:
       access-token: ${{ secrets.ACCESS_TOKEN }}
   calling-a-reusable-wf-in-the-same-repo:
-    uses: ./.github/workflows/reusable-workflow.yaml
+    uses: ./.github/workflows/reusable.yaml
     secrets: inherit
   using-reusable-wf-output:
     runs-on: ubuntu-latest
