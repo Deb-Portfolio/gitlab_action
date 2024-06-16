@@ -5,11 +5,11 @@ on:
       name:
         description: "Input description"
         type: string
-        default: "Ali"
+        default: "Debanjan"
         required: false
 jobs:
   calling-a-reusable-wf:
-    uses: github-actions-course/workflows/.github/workflows/reusable.yaml@main
+    uses: reusable_workflow/.github/workflows/reusable-workflow.yaml@main
     with:
       name: ${{ inputs.name }}
     secrets:
