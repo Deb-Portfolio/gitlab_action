@@ -1,4 +1,4 @@
-name: Simple Action
+name: Simple Action 3 [Docker]
 on: [push]
 
 jobs:
