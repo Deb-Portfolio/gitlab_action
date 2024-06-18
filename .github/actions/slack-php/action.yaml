@@ -1,4 +1,4 @@
-name: Send a Slack Message through PHP
+name: Send a Slack Message via PHP
 author: Debanjan Mitra
 description: "Send a slack message with workflow information"
 inputs:
